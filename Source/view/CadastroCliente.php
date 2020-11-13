@@ -31,7 +31,7 @@
 <div class="container">
   <h2>Cadastro de Clientes</h2>
   <p>Dados cadastrais dos clientes da mariabonita website</p>
-  <form action="/mariabonita/GravaCliente" method="post">
+  <form action="/GravaCliente" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
         <label for="Nome">Nome:</label>
