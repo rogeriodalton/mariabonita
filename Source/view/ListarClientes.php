@@ -24,23 +24,3 @@ $Titulos = [
  
 echo implode(fnTable($Clientes->aQry, $Titulos));
 unset($Clientes);
-
-?>
-<script>
- function Abrir(GID, TipoDocumento, Descricao, Numero, Valor, Vencimento, Referencia){
-      $.ajax
-      ({
-            method: 'GET',
-            type: 'GET',
-            dataType: 'html',
-            url: 'ProtocoloItemAnonimo',
-            data: {GID: GID, TipoDocumento: TipoDocumento, Descricao: Descricao, Numero: Numero, Valor: Valor, Vencimento: Vencimento , Referencia: Referencia},
-            beforeSend: function () {
-                  $("#Encontrar").html("Carregando...");
-            },
-            success: function (msg) {
-                  $("#Encontrar").html(msg);
-            }
-      });
-}
-</script>    
