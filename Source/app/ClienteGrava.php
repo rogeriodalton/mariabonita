@@ -18,6 +18,5 @@ unset($Cliente);
 
 if ($MensagemServidor=='')
   echo '<h1>Registro gravado com sucesso!</h1>';
-
-  echo "<a href=\"Home\"><b>Voltar</b></a>"
+echo "<a href=\"Home\"><b>Voltar</b></a>"
 ?>
