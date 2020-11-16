@@ -9,7 +9,7 @@ if (array_key_exists('REQUEST_METHOD', $_SERVER)==true)
 	$RequestMethod = $_SERVER['REQUEST_METHOD'];
 $url = (string)'';
 switch($RequestMethod){
-case 'GET':	$the_request = &$_GET;
+case 'GET': $the_request = &$_GET;
             $url = &$the_request['url'];			
             break;
 			
