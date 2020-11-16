@@ -15,7 +15,7 @@ case 'GET': $the_request = &$_GET;
 			
 case 'POST': $the_request = &$_POST;
              $url = $_REQUEST['url'];
-			 break; 
+	     break; 
 }
 
 if ($url=='')
