@@ -10,13 +10,13 @@ if (array_key_exists('REQUEST_METHOD', $_SERVER)==true)
 	
 $url = (string)'';
 switch($RequestMethod){
-case  'GET': $the_request = &$_GET;
-             $url = &$the_request['url'];			
-             break;
-			
-case 'POST': $the_request = &$_POST;
-             $url = $_REQUEST['url'];
-	     break; 
+    case  'GET': $the_request = &$_GET;
+                 $url = &$the_request['url'];			
+                 break;
+		
+    case 'POST': $the_request = &$_POST;
+                 $url = $_REQUEST['url'];
+	         break; 
 }
 
 if ($url=='')
