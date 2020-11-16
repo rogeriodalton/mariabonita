@@ -20,7 +20,7 @@ case 'POST': $the_request = &$_POST;
 }
 
 if ($url=='')
-	require_once $varSystem['Home'];  
+    require_once $varSystem['Home'];  
 else 
 if (array_key_exists($url, $varSystem)){
     $arquivo = $varSystem[$url];
