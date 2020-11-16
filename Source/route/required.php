@@ -6,7 +6,7 @@ return ["Database"         => "/mariabonita/Source/dba/dbConn.php",
         "classSelCliente"  => "/mariabonita/Source/dba/classSelCliente.php",
         "fnExibir"         => "/mariabonita/Source/app/fnExibir.php",
         "fnTable"          => "/mariabonita/Source/app/fnTable.php",
-        "fnCEP"            => "/mariabonita/Source/app/fnCEP.php"
-		"fnUrlReferencia"  => "/mariabonita/Source/app/fnUrlReferencia.php"
+        "fnCEP"            => "/mariabonita/Source/app/fnCEP.php",
+	"fnUrlReferencia"  => "/mariabonita/Source/app/fnUrlReferencia.php"
         ]
 ?>
