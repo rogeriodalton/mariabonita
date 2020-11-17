@@ -1,3 +1,3 @@
 <?php
-echo '<h1>Caminho ou Página não encontrada.</h1>';
+echo '<h1>Rota de acesso inexistente.</h1>';
 ?>

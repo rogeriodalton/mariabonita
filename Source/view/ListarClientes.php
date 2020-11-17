@@ -22,5 +22,6 @@ $Titulos = [
     ['nome'=>'Referência', 'tamanho'=>'20', 'colspan'=>'1'],
     ];
  
-echo implode(fnTable($Clientes->aQry, $Titulos));
+  fnTable($Clientes->aQry, $Titulos);
 unset($Clientes);
+ 
