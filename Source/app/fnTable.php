@@ -1,10 +1,10 @@
 <?php
-function fnTable($dados = [], $titulo = [], string $PrimeiroCampo = 'param_ID', string $fnSelecionar ='CadastroCliente?ID=', string $fnDelete = 'ClienteExcluir?ID=') : array {
+function fnTable($dados = [], $titulo = [], string $PrimeiroCampo = 'param_ID', string $fnSelecionar ='CadastroCliente?ID=', string $fnDelete = 'ClienteExcluir?ID='){
     $tit = count($titulo);
     $reg = count($dados);
     $html = array();
     if ($reg == 0)
-        $html[] = ['Não Encontrado'];
+      die('Nenhum registro encontrado');  
     else
     if (($tit > 0) && ($reg > 0)){
           $html[] = "<table id='TableFilter' border='1'>\n";
@@ -66,6 +66,7 @@ function fnTable($dados = [], $titulo = [], string $PrimeiroCampo = 'param_ID', 
               }
           }
           $html[] = "</tr>\n";
-      return $html;
+      
+      echo implode($html);
   }
 ?>
