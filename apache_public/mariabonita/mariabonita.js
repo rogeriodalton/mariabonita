@@ -44,21 +44,21 @@ function ConsultaCEP(CEP){
                   $("#uf").val("");
                   $("#bairro").val("Aguarde ...");
                   $("#rua").val("Aguarde ...");
-                  $("#complemento").val("Aguarde ...");
+                  $("#referencia").val("Aguarde ...");
               },              
               success: function (msg){
                   $("#cidade").val(msg.localidade);
                   $("#uf").val(msg.uf);
                   $("#bairro").val(msg.bairro);
                   $("#rua").val(msg.logradouro);
-                  $("#complemento").val(msg.complemento);
+                  $("#referencia").val(msg.complemento);
               },
               error : function(erro) {
                   $("#cidade").val("");
                   $("#uf").val("");
                   $("#bairro").val("");
                   $("#rua").val("");
-                  $("#complemento").val("");
+                  $("#referencia").val("");
                   alert("CEP não encontrado.");
               } 
       });
