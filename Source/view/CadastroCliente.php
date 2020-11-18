@@ -57,18 +57,18 @@
   <div class="form-row">
     <div class="form-group col-md-2">
       <label for="CEP">Informe CEP:</label><br>
-      <input type="CEP" class="form-control" id="CEP" name="CEP" value="<?php showArrayKey($aCliente,'CEP')?>"> <button type="button" id='BuscaCEP' class="btn btn-outline-primary btn-sm">Buscar</button>
+      <input type="CEP" class="form-control" id="cep" name="CEP" value="<?php showArrayKey($aCliente,'CEP')?>"> <button type="button" onclick="myFunction()" id='BuscaViaCEP' class="btn btn-outline-primary btn-sm">Buscar</button>
     </div>
     <div class="form-group col-md-10">
       <label for="Rua">Rua:</label>
-      <input type="text" class="form-control" id="Rua" name="Rua" value="<?php showArrayKey($aCliente,'Rua')?>">
+      <input type="text" class="form-control" id="rua" name="Rua" value="<?php showArrayKey($aCliente,'Rua')?>">
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-2">
       <label for="UF">UF</label>
-      <select class="form-control" name="UF" id="UF" value="<?php showArrayKey($aCliente, 'UF')?>">
+      <select class="form-control" name="UF" id="uf" value="<?php showArrayKey($aCliente, 'UF')?>">
         <option value="AC">Acre</option>
         <option value="AL">Alagoas</option>
         <option value="AP">Amapá</option>
@@ -101,12 +101,12 @@
 
     <div class="form-group col-md-4">
       <label for="Cidade">Cidade</label>
-      <input type="text" class="form-control" id="Cidade" name="Cidade" value="<?php showArrayKey($aCliente,'Cidade')?>">
+      <input type="text" class="form-control" id="cidade" name="Cidade" value="<?php showArrayKey($aCliente,'Cidade')?>">
     </div>
  
     <div class="form-group col-md-6">
       <label for="Bairro">Bairro</label>
-      <input type="text" class="form-control" id="Bairro" name="Bairro" value="<?php showArrayKey($aCliente,'Bairro')?>">
+      <input type="text" class="form-control" id="bairro" name="Bairro" value="<?php showArrayKey($aCliente,'Bairro')?>">
     </div>
   </div>
 
@@ -126,3 +126,10 @@
 
 </body>
 </html>
+
+<script>
+   $('#BuscaViaCEP').click(function (){
+       ConsultaCEP($("#cep").val())
+    });
+  
+</script>
