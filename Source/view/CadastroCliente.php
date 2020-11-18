@@ -24,6 +24,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="mariabonita.js"></script>
 </head>
 <body>
 
@@ -113,7 +114,7 @@
   <div class="form-row">
     <div class="form-group col-md-12">
       <label for="Referencia">Referência:</label>
-      <input type="text" class="form-control" id="Referencia" name="Referencia" value="<?php showArrayKey($aCliente,'Referencia')?>">
+      <input type="text" class="form-control" id="referencia" name="Referencia" value="<?php showArrayKey($aCliente,'Referencia')?>">
     </div>
   </div>
 
