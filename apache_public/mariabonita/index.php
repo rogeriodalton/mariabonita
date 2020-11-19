@@ -2,6 +2,7 @@
 ini_set('default_charset', 'utf-8'); 
 
 $varSystem = require_once '/mariabonita/Source/route/vars.php';
+$required  = require_once '/mariabonita/Source/route/required.php';
 
 $the_request = [];
 $RequestMethod = '';
