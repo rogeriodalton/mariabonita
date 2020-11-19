@@ -8,5 +8,4 @@ return ["Home"              => "/mariabonita/Source/view/home.php",
         "CadastroCliente"   => "/mariabonita/Source/view/CadastroCliente.php",
         "ClienteExcluir"    => "/mariabonita/Source/app/ClienteExcluir.php"
        ];
-        
 ?>
