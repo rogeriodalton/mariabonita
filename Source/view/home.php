@@ -42,10 +42,4 @@
     $('#Cadastro_Cliente').click(function () {
         CadastroCliente($().val())
     });
-  
-</script>
-
-<?php
-echo '';
-
-?>
+ </script>

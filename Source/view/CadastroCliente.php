@@ -1,5 +1,4 @@
 <?php
-  $required = require_once '/mariabonita/Source/route/required.php';
   require_once $required['Database'];
   require_once $required['classSelCliente'];
   require_once $required['fnExibir'];

@@ -1,5 +1,4 @@
 <?php
-$required = require_once '/mariabonita/Source/route/required.php';
 require_once $required['Database'];
 require_once $required['classSelCliente'];
 require_once $required['fnTable'];
@@ -21,7 +20,7 @@ $Titulos = [
     ['nome'=>'Bairro',     'tamanho'=>'20', 'colspan'=>'1'],
     ['nome'=>'Referência', 'tamanho'=>'20', 'colspan'=>'1'],
     ];
- 
-  fnTable($Clientes->aQry, $Titulos);
+   fnTable($Clientes->aQry, $Titulos);
+   
 unset($Clientes);
  
