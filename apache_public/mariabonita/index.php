@@ -26,7 +26,7 @@ else
 if (array_key_exists($url, $varSystem)){
     $arquivo = $varSystem[$url];
 if (!(file_exists($arquivo)))
-    die('o caminho solicitado "' . $url . '" existe no entanto o arquivo não foi encontrado no servidor');
+    die("o caminho solicitado {$url} existe no entanto o arquivo não foi encontrado no servidor");
     require_once $arquivo;
 }	
 else
