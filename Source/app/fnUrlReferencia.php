@@ -1,7 +1,8 @@
 <?php
     function fnUrlReferencia(string $SubDominio, array &$the_request){
         $aSubDominio = '/'. $SubDominio;
-          
+        //$aHome = retornaDominioAnterior('/', $_SERVER["HTTP_REFERER"]);
+  
         $aID = (string)'';
         if (array_key_exists('ID', $the_request))
            $aID = "?ID={$the_request['ID']}";  

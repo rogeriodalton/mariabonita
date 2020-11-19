@@ -7,7 +7,6 @@ $clienteID = '';
 if (array_key_exists('ID', $_GET))  
   $clienteID = $_GET['ID'];
 
-$required = require_once '/mariabonita/Source/route/required.php';
 require_once $required['Database'];
 require_once $required['classNewUpdCliente'];
 require_once $required['fnSubDominioAnterior'];
