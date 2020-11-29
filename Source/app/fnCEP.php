@@ -6,4 +6,5 @@ function fnBuscaCEP(): array{
   $json = str_replace('},]',"}]",$json);
   return json_decode($json);   
 }
+
 ?>
