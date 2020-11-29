@@ -6,7 +6,7 @@ use dbConn;
 
 class classNewUpdCliente extends dbConn 
 {
-  public function __construct(array &$Required, string $clienteID) 
+  public function __construct(array $Required, string $clienteID) 
   {
 
   if ($clienteID=='')
@@ -47,4 +47,5 @@ class classNewUpdCliente extends dbConn
     parent::__construct($sql);
     }
 }
+
 ?>

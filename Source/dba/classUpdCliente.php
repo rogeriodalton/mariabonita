@@ -5,7 +5,7 @@ use dbConn;
 
 class classUpdCliente extends dbConn 
 {
-  public function __construct(array &$Required) 
+  public function __construct(array $Required) 
   {
     $sql = ["UPDATE cliente 
                 SET (Nome = '{$Required['Nome']}',

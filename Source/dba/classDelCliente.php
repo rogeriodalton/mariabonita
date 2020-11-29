@@ -6,7 +6,7 @@ use dbConn;
 
 class classDelCliente extends dbConn 
 {
-  public function __construct(array &$Required) 
+  public function __construct(array $Required) 
   {
     $clienteID='';
     if (array_key_exists('ID', $Required))
