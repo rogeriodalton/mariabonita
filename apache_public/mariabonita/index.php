@@ -5,7 +5,6 @@ $PHP_Version = phpversion();
 if ($PHP_Version < $minPHPVersion)
 	die("Esse website requer PHP {$minPHPVersion} ou superior. <br> Versão atual: {$PHP_Version}");
 
-//$SP = '/home/storage/6/0b/e6/mariabonitaservi1/cfg/Source';
 $SP = '/mariabonita/Source';
 define ('varSystem', require_once "{$SP}/route/vars.php");
 define ('required',  require_once "{$SP}/route/required.php");
