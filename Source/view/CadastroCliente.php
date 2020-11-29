@@ -1,12 +1,12 @@
 <?php
-  require_once $required['Database'];
-  require_once $required['classSelCliente'];
-  require_once $required['fnExibir'];
-  require_once $required['fnUrlReferencia'];
+  require_once required['Database'];
+  require_once required['classSelCliente'];
+  require_once required['fnExibir'];
+  require_once required['fnUrlReferencia'];
  
   use Source\dba\classSelCliente;
   $aCliente = [];
-  $Clientes = new classSelCliente($the_request);
+  $Clientes = new classSelCliente(the_request);
   $Clientes->viewQry();
   $aCliente = $Clientes->aQry;
   unset($Clientes);
@@ -31,7 +31,7 @@
   <h2>Cadastro de Clientes</h2>
   <p>Dados cadastrais dos clientes da mariabonita website</p>
 
-  <form action="<?php fnUrlReferencia('GravaCliente', $the_request)?>" method="post">
+  <form action="<?php fnUrlReferencia('GravaCliente', the_request)?>" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
         <label for="Nome">Nome:</label>
@@ -131,5 +131,4 @@
    $('#BuscaViaCEP').click(function (){
        ConsultaCEP($("#cep").val())
     });
-  
 </script>

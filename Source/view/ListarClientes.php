@@ -1,11 +1,11 @@
 <?php
-require_once $required['Database'];
-require_once $required['classSelCliente'];
-require_once $required['fnTable'];
+require_once required['Database'];
+require_once required['classSelCliente'];
+require_once required['fnTable'];
 
 use Source\dba\classSelCliente;
 
-$Clientes = new classSelCliente($the_request);
+$Clientes = new classSelCliente(the_request);
 $Clientes->viewQry();
 
 $Titulos = [
@@ -23,4 +23,3 @@ $Titulos = [
    fnTable($Clientes->aQry, $Titulos);
    
 unset($Clientes);
- 
