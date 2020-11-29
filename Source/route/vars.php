@@ -1,11 +1,11 @@
 <?php
 
-return ["Home"              => "/mariabonita/Source/view/home.php",
-        "NotFound"          => "/mariabonita/Source/view/PageNotFound.php",
-        "sobre"             => "/mariabonita/Source/view/About.php",
-        "ListarClientes"    => "/mariabonita/Source/view/ListarClientes.php",
-        "GravaCliente"      => "/mariabonita/Source/app/ClienteGrava.php",
-        "CadastroCliente"   => "/mariabonita/Source/view/CadastroCliente.php",
-        "ClienteExcluir"    => "/mariabonita/Source/app/ClienteExcluir.php"
+return ["Home"            => "{$SP}/view/home.php",
+        "NotFound"        => "{$SP}/view/PageNotFound.php",
+        "sobre"           => "{$SP}/view/About.php",
+        "ListarClientes"  => "{$SP}/view/ListarClientes.php",
+        "GravaCliente"    => "{$SP}/app/ClienteGrava.php",
+        "CadastroCliente" => "{$SP}/view/CadastroCliente.php",
+        "ClienteExcluir"  => "{$SP}/app/ClienteExcluir.php"
        ];
 ?>
