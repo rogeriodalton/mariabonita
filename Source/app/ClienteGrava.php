@@ -1,5 +1,5 @@
 <?php
-$Auth = (bool)((($_SERVER['REQUEST_METHOD']=='GET') && (array_key_exists('ID', $the_request))) || ($_SERVER['REQUEST_METHOD']=='POST'));
+$Auth = (bool)((($_SERVER['REQUEST_METHOD']=='GET') && (array_key_exists('ID', the_request))) || ($_SERVER['REQUEST_METHOD']=='POST'));
 if ($Auth==false)
   die('Acesso inválido.');
 
